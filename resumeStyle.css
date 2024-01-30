@@ -1,0 +1,578 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:rgb(246, 226, 250);
+}
+nav{
+    z-index: 1;
+    position: sticky;
+    top: 0%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding-inline: 10px;
+    height: 100px;
+    border-bottom: 2px solid rgb(192, 194, 255);
+    background-color: rgb(255, 250, 255);
+}
+.logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+#mlogo{
+    box-sizing: content-box!important;
+    position: relative;
+    height: 35px;
+    width: 35px;
+    border: 5px solid red;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: ; */
+    align-items: center;
+}
+#SN {
+    position: relative;
+    top: 0.3em;
+    font-size: 1.3em;
+    font-family: 'Rubik Glitch', system-ui;
+}
+
+#Sach_Code_In {
+    position: relative;
+    inset: 2.0em 0 0 0.2em;
+    font-size: 0.5em;
+    color: rgb(0, 255, 0);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.header_name{
+    font-size: 2em;
+    font-family: 'Poppins', sans-serif;
+    font-weight:1200;
+}
+/* .navList{
+   border: 2px solid red;
+} */
+#bar{
+    display: none;
+    /* visibility: hidden; */
+}
+.menu ul{
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+
+}
+.menu ul li{
+    font-family: 'Poppins',sans-serif;
+    position: relative;
+}
+.menu ul li a{
+    color: black;
+    font-family: 'Alegreya Sans SC', sans-serif; 
+    text-decoration: none;
+    position: relative;
+}
+.menu ul li a::after{
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background-color: #3498db;
+    transform: scaleX(0);
+    transform-origin: bottom left;
+    transition: transform 0.3s ease-in-out;
+}
+.menu ul li a:hover::after{
+    transform:scaleX(1);
+}
+
+.menuBar{
+    display: none;
+}
+
+.bottomenu{
+    display: none;
+ }
+ .bottomenu div{
+     text-align: center;
+    font-size: 1.0em;
+    font-family: "poppins",sans-serif;
+    height: 60%;
+    width: auto;
+ }
+
+ .menu_ele {
+    position: relative;
+    display: block;
+    margin: 0;
+}
+
+.menu_ele a {
+    text-decoration: none;
+    color: #333; 
+    position: relative;
+}
+
+.menuBar ul li a::after{
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(52, 152, 219);
+    transform: scaleX(0);
+    transform-origin: bottom left;
+    transition: transform 0.3s ease-in-out;
+}
+.menuBar ul li a:hover::after{
+    transform:scaleX(1);
+}
+#heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif; 
+    background-color:rgb(192, 194, 255) ;
+    padding-block: 2%;
+    text-align: center;
+    
+}
+#heading i{
+    position: relative;
+    font-size: larger;
+    left: 25%;
+    cursor: pointer;
+}
+.content{
+    padding: 0 3em;
+}
+
+.nameInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#Name
+{
+    font-size: larger;
+    font-family: 'Poppins', sans-serif; 
+}
+#info{
+    padding: 1em;
+    font-size: 1.2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+}
+#info{
+font-family: 'Genos',sans-serif;
+}
+#info p i{
+font-weight: 500;
+}
+#info p img{
+height: 0.8em;
+}
+#sachimg{
+border: 1em solid pink;
+border-radius: 50%;
+height: 40vmin;
+width: 40vmin;
+}
+.coninfo{
+font-family: 'Genos',sans-serif;
+padding: 1em;
+border-bottom:2px solid #3498db;
+
+}
+.coninfo h3{
+text-decoration: underline;
+}
+#Objective p{
+text-indent: 2em;
+}
+.simage{
+display: flex;
+justify-content: center;
+}
+.Sclimg{
+border: 2vmin solid rgb(205, 164, 235);
+border-radius:2vmin;
+width: 80%;
+/* padding:2vmax ; */
+}
+.clgimg{
+display: flex;
+justify-content: center;
+flex-direction: column;
+}
+#clgimage{
+height: 80%;
+margin-top:2em ;
+}
+.tskill
+{
+display: flex;
+align-items: center;
+}
+#htmlindi{
+border:2px solid rgb(135, 135, 243);
+height:0 ;
+width: 70vw;
+}
+#cssindi{
+border:2px solid rgb(135, 135, 243);
+height:0 ;
+width: 70vw;
+}
+#jsindi{
+border:2px solid rgb(135, 135, 243);
+height:0 ;
+width: 60vw;
+}
+#dsaindi{
+border:2px solid rgb(135, 135, 243);
+height: 0;
+width: 60vw;
+}
+
+.Foot{
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-bottom: 50px;
+padding: 10px;
+justify-content: space-around;
+color: rgb(0, 0, 0);
+background-color: rgb(245, 179, 219);
+font-family:'Genos', sans-serif;
+font-weight: light;
+}
+.social_accounts div{
+display: flex;
+justify-content:space-around;
+}
+.bottomenu{
+    display: none;
+}
+
+.Foot{
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    /* margin-bottom: 86px; */
+    padding: 10px;
+    justify-content: space-around;
+    color: rgb(0, 0, 0);
+    background-color: rgb(245, 179, 219);
+    font-family:'Genos', sans-serif;
+    font-weight: light;
+}
+.social_accounts div{
+    display: flex;
+    justify-content:space-around;
+}
+/* --------------------This is for size less or equal to 1000px -------------*/
+/* --------------------This is for size less or equal to 1000px -------------*/
+/* --------------------This is for size less or equal to 1000px -------------*/
+@media screen and (max-width:900px){
+    body{
+        background-color:rgb(246, 226, 250);
+        margin: 0;
+        padding: 0;
+    }
+    nav{
+        z-index: 1;
+        position: sticky;
+        top: 0%;
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        padding-inline: 10px;
+        height: 60px;
+        border-bottom: 2px solid rgb(192, 194, 255);
+        background-color: rgb(255, 250, 255);
+    }
+    .logo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 8px;
+    }
+    #mlogo{
+        box-sizing: content-box!important;
+        position: relative;
+        height: 20px;
+        width: 20px;
+        border: 3px solid red;
+        border-radius: 50%;
+        display: flex;
+        flex-direction: column;
+      
+        align-items: center;
+    }
+    #SN {
+        position: relative;
+        top: 0.359em;
+        font-size: 0.66em;
+        font-family: 'Rubik Glitch', system-ui;
+    }
+    
+    #Sach_Code_In {
+        position: relative;
+        inset: 3.1em 0 0 0.4em;
+        font-size: 0.2em;
+        color: rgb(0, 255, 0);
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    
+    .header_name{
+        font-size: 2em;
+        font-family: 'Poppins', sans-serif;
+        font-weight:900;
+    }
+    
+    .menu{
+        display: none;
+    }
+    #bar{
+        display: inline-block;
+        font-size: 2em;
+        cursor:pointer;
+    }
+    
+    .menuBar{
+        float:left;
+        position: fixed;
+        font-size: 1rem;
+        background-color: #faf3f4eb;
+        display: none;
+        z-index: 9;
+        width: 100vw;
+        height: 100vh;
+        animation:comeIn 1s ease-in-out;
+    }
+    
+    @keyframes comeIn {
+        from {
+            transform: translateX(-100%);
+        }
+        to {
+            transform: translateX(0);
+        }    
+    }
+    .cross{
+        animation: goback 1s ease-in-out;
+    }
+    @keyframes goback {
+        from {
+            transform: translateX(0);
+        }
+        to {
+            transform: translateX(-100%);
+        }    
+    }
+    .menuBar ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        list-style-type:none;
+        padding: 20% 3em 0 3em;
+    } 
+    .menuBar ul li{
+        line-height:10vmax;
+    }
+    
+    .menuBar ul li a{
+        font-family: 'Alegreya Sans SC', sans-serif; 
+  
+        text-decoration: none;
+        color: black;
+    }
+  
+    #crossbar{
+        
+        position: relative;
+        font-size: 2em;
+        cursor: pointer;
+        left: 7%;
+        top: 5%;
+    }
+    
+    #heading{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Poppins', sans-serif; 
+        background-color:rgb(192, 194, 255) ;
+        padding-block: 2%;
+        text-align: center;
+
+    }
+    #heading i{
+        position: relative;
+        font-size: larger;
+        left: 25%;
+        cursor: pointer;
+    }
+    .content{
+        padding: 0 2em;
+    }
+    #Name
+    {
+        font-size: larger;
+        font-family: 'Poppins', sans-serif; 
+    }
+    .nameInfo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+  
+   #info{
+    font-family: 'Genos',sans-serif;
+   }
+
+#sachimg{
+    border: 1em solid pink;
+    border-radius: 50%;
+    height: 40min;
+    width: 40vmin;
+}
+.coninfo{
+    font-family: 'Genos',sans-serif;
+    padding: 1em;
+   
+}
+.coninfo h3{
+    text-decoration: underline;
+    
+}
+#Objective p{
+    text-indent: 2em;
+}
+.simage{
+    display: flex;
+    justify-content: center;
+}
+.Sclimg{
+    border: 2vmin solid rgb(205, 164, 235);
+    border-radius:2vmin;
+    width: 80%;
+    /* padding:2vmax ; */
+}
+.clgimg{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+#clgimage{
+    height: 80%;
+    margin-top:2em ;
+}
+.tskill
+{
+    display: flex;
+    align-items: center;
+}
+#htmlindi{
+    border:2px solid rgb(135, 135, 243);
+    height:0 ;
+    width: 70vw;
+}
+#cssindi{
+    border:2px solid rgb(135, 135, 243);
+    height:0 ;
+    width: 70vw;
+}
+#jsindi{
+    border:2px solid rgb(135, 135, 243);
+    height:0 ;
+    width: 60vw;
+}
+#dsaindi{
+    border:2px solid rgb(135, 135, 243);
+    height: 0;
+    width: 60vw;
+}
+
+.Foot{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+    padding: 10px;
+    justify-content: space-around;
+    color: rgb(0, 0, 0);
+    background-color: rgb(245, 179, 219);
+    font-family:'Genos', sans-serif;
+    font-weight: light;
+}
+.social_accounts div{
+    display: flex;
+    justify-content:space-around;
+}
+.bottomenu{
+    position: fixed;
+    top: calc(100vh - 50px);
+    z-index: 0.5;
+    background-color:#fffaff;
+    border:2px solid cornflowerblue;
+    width: calc(100%);
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.bottomenu div{
+    text-align: center;
+    font-size: 0.6em;
+    font-family: "poppins",sans-serif;
+    
+    height: 60%;
+    width: auto;
+}
+
+.menu_ele {
+    position: relative;
+    display: block;
+    margin: 0;
+}
+
+.menu_ele a {
+    text-decoration: none;
+    color: #333; 
+    font-family: 'Alegreya Sans SC', sans-serif; 
+    position: relative;
+}
+
+.menu_ele a::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left:10px;
+    bottom: -5px;
+    width: 100%;
+    height: 2px; 
+    background-color: #3498db;
+    transform: scaleX(0);
+   transform-origin: bottom right;
+   transition: transform 0.3s ease; 
+}
+
+.menu_ele a:hover::after{
+    transform: scaleX(250%);
+}
+}
