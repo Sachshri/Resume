@@ -25,4 +25,8 @@ window.addEventListener('resize',()=>{
     Bar.style.display="none";
 })
 
+function printFunction(){
+     window.print();
+}
+
 

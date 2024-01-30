@@ -42,7 +42,7 @@ section{
 .content{
     display: flex;
     font-family: "Genos",sans-serif;
-    padding-left: 10px;
+    padding: 10px 0 0 10px;
     flex-direction: column;
 }
 .cont
