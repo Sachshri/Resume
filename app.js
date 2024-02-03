@@ -22,7 +22,7 @@ closeBar.addEventListener('click',()=>{
 });
 window.addEventListener('resize',()=>{
     menuBar.style.display="none";
-    Bar.style.display="none";
+    // Bar.style.display="none";
 })
 
 function printFunction(){
