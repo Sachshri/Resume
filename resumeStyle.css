@@ -284,9 +284,8 @@ justify-content:space-around;
     display: flex;
     justify-content:space-around;
 }
-/* --------------------This is for size less or equal to 1000px -------------*/
-/* --------------------This is for size less or equal to 1000px -------------*/
-/* --------------------This is for size less or equal to 1000px -------------*/
+/* --------------------This is for size less or equal to 900px -------------*/
+
 @media screen and (max-width:900px){
     body{
         background-color:rgb(246, 226, 250);
